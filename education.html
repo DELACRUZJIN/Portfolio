@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Education — Simple Portfolio</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --accent: #60a5fa;
+      --text: #1f2937;
+      --muted: #6b7280;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(100deg, #f8fafc, #e5e7eb);
+      color: var(--text);
+    }
+    .wrap {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 24px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    }
+    h1 {
+      margin-top: 50;
+      color: var(--accent);
+      text-align: center;
+    }
+    .timeline {
+      border-left: 3px solid var(--accent);
+      padding-left: 50px;
+      margin-top: 50px;
+    }
+    .item {
+      margin-bottom: 20px;
+      position: relative;
+    }
+    .item::before {
+      content: "";
+      position: absolute;
+      left: -30px;
+      top: 6px;
+      width: 14px;
+      height: 14px;
+      background: var(--accent);
+      border-radius: 50%;
+    }
+    .degree {
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    .school {
+      color: var(--muted);
+      font-size: 0.85em;
+      margin-bottom: 2px;
+    }
+    .year {
+      font-size: 0.40em;
+      color: #9ca3af;
+    }
+    @media(max-width:500px){
+      .wrap { padding: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Education</h1>
+    <div class="timeline">
+      <div class="item">
+        <div class="degree">Bachelor of Science in Information Technology</div>
+        <div class="school">University of Abra</div>
+        <div class="Second year">2025 - Present</div>
+      </div>
+      <div class="item">
+        <div class="degree">Senior High School - GENERAL ACADEMIC STRAND</div>
+        <div class="school">Rosalio Eduarte National High School</div>
+        <div>Senior High School</div>
+        <div class="year">2022 - 2023</div>
+      </div>
+      <div class="item">
+        <div class="degree">Junior High School</div>
+        <div class="school">Rosalio Eduarte National High School</div>
+        <div class="year">2016 - 2020</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

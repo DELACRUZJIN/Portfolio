@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Simple Portfolio</title>
+  <style>
+    :root{--bg:#fff;--card:#0b1220;--accent:#60a5fa;--muted:#6b7280;--fg:#f8fafc}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:linear-gradient(180deg,#f8fafc,#eef2f7);color:#0b1220}
+    .wrap{max-width:780px;margin:56px auto;padding:28px;background:#fff;border-radius:12px;box-shadow:0 6px 24px rgba(11,18,32,0.08)}
+    a.back{display:inline-block;margin-bottom:16px;color:var(--accent);text-decoration:none}
+    .about{display:grid;grid-template-columns:1fr 260px;gap:20px;align-items:start}
+    .bio{padding:18px}
+    h2{margin:0 0 8px;font-size:22px}
+    p{margin:0 0 12px;color:var(--muted);line-height:1.5}
+    .card{background:linear-gradient(180deg,#0b1220,#0f1724);color:var(--fg);padding:14px;border-radius:10px}
+    .tag{display:inline-block;margin:6px 6px 0 0;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,0.06);font-size:13px}
+    @media(max-width:720px){.about{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <a class="back" href="home.html">← Back to Home</a>
+    <section class="about">
+      <div class="bio">
+        <h2>About Me</h2>
+        <p>I am a simple girl with a dream — still learning and growing. I enjoy building small projects, designing clean pages, and improving step by step. I focus on simplicity, clarity, and steady progress.</p>
+        <p>Currently exploring HTML, CSS, and small JavaScript interactions. I like to keep designs minimal and accessible.</p>
+      </div>
+
+      <aside class="card">
+        <strong>Quick facts</strong>
+        <div style="margin-top:12px">
+          <div class="tag">Learning: Web</div>
+          <div class="tag">Hobby: Design</div>
+          <div class="tag">Location: Dolores, Abra</div>
+        </div>
+      </aside>
+    </section>
+  </main>
+</body>
+</html>
